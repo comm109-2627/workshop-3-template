@@ -1,0 +1,85 @@
+
+#!/bin/bash
+# STREAMING_CHUNK: Setting up the environment and creating the first few files...
+echo "Creating Python Workshop 3 starter files..."
+# Part 1
+cat << 'EOF' > workshop3_part1.py
+print("Part 1:")
+EOF
+
+echo "Created workshop3_part1.py"
+# Part 2
+cat << 'EOF' > workshop3_part2.py
+print("Part 2:")
+people = ['fred', 'greta', 'hetty']
+EOF
+
+echo "Created workshop3_part2.py"
+# Part 3
+cat << 'EOF' > workshop3_part3.py
+print("Part 3:")
+values = [ 9, 33, 6, 21 ]
+EOF
+
+echo "Created workshop3_part3.py"
+# STREAMING_CHUNK: Creating the next batch of files with starter code...
+# Part 4
+cat << 'EOF' > workshop3_part4.py
+print("Part 4:")
+x = 2
+for i in range(15):
+    print(x)
+    x = x*2
+EOF
+
+echo "Created workshop3_part4.py"
+# Part 5
+cat << 'EOF' > workshop3_part5.py
+print("Part 5:")
+fullname = "A N Other"
+age = 23
+height_cm = 155
+EOF
+
+echo "Created workshop3_part5.py"
+# Part 6
+cat << 'EOF' > workshop3_part6.py
+print("Part 6:")
+fullname = "A N Other"
+age = 23
+height_cm = 155
+EOF
+
+echo "Created workshop3_part6.py"
+# STREAMING_CHUNK: Creating the final set of files related to dictionaries...
+# Part 7
+cat << 'EOF' > workshop3_part7.py
+print("Part 7:")
+customer_data = []
+EOF
+
+echo "Created workshop3_part7.py"
+# Part 8
+cat << 'EOF' > workshop3_part8.py
+print("Part 8:")
+stock_levels = { "S": 10, "M": 23, "L": 17 }
+EOF
+
+echo "Created workshop3_part8.py"
+# Part 9 (Extension)
+cat << 'EOF' > workshop3_part9.py
+print("Part 9:")
+stock_levels = { "S": 10, "M": 23, "L": 17 }
+customer_list = []
+EOF
+
+echo "Created workshop3_part9.py"
+echo "All starter files created successfully!"
+git status
+git add .
+git_helper save
+git_helper --save
+git_helper --commit
+git_helper --zip
+cp workshop3_extension.py workshop3_challenge.py
+git_helper --commit
